@@ -22,9 +22,10 @@ Using the `window.print` API requires macOS version `11.0+`.
 
 You can compile your application targeting Apple Silicon, Intel-based Mac computers, or universal macOS binaries. By default, the CLI builds a binary targetting your machine's architecture. If you are using an Apple Silicon macOS, you can compile Intel and universal binaries using the `target` option:
 
-- `tauri build --target aarch64-apple-darwin`: targets Apple Silicon for your application;
-- `tauri build --target x86_64-apple-darwin`: targets Intel-based Mac computers;
-- `tauri build --target universal-apple-darwin`: targets [universal macOS binaries].
+- `tauri build --target=aarch64-apple-darwin`: targets Apple Silicon for your application;
+- `tauri build --target=x86_64-apple-darwin`: targets Intel-based Mac computers;
+- `tauri build --target=universal-apple-darwin`: targets [universal macOS binaries].
+Example `npm run tauri build --target universal-apple-darwin`
 
 :::caution
 - Apple Silicon binaries only run on Mac computers with Apple Silicon.
